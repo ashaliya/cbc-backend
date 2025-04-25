@@ -40,6 +40,7 @@ export function createUser(req,res){
             message: "Failed to create user",
         })
     })
+    
 }
 
 export function loginUser(req,res){
@@ -76,6 +77,7 @@ export function loginUser(req,res){
             }
         }
     )
+    //testing commit
 }
 
 export function isAdmin(req){
