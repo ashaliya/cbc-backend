@@ -27,6 +27,11 @@ const orderSchema = mongoose.Schema({
         required : true,
         default : "pending"
     },
+    labelledTotal :{
+        type : String,
+        required : true,
+      
+    },
     total : {
         type : Number,
         required : true
@@ -69,3 +74,6 @@ const orderSchema = mongoose.Schema({
         default : Date.now
     }
 })
+
+const Order = mongoose.model("orders",orderSchema)
+export default Order;
